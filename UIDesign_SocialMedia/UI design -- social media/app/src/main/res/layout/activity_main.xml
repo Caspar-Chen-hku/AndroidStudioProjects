@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    //the whole interface is a vertical linear layout
+
+    //every single post is a horizontal layout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_weight="1">
+
+        //the image of the blue square
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/blue_square1"
+            android:src="@drawable/blue"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="top"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:adjustViewBounds="true"
+            android:layout_weight="1"
+
+            />
+
+        //anonymous information, comment, emoji and thanks are a vertical layout
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="20dp"
+            android:paddingTop="6dp">
+
+            //anonymous information
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/anonymous1"
+                android:gravity="left"
+                android:textStyle="normal|italic"
+                android:textSize="15dp"
+                android:text="@string/anonymous"
+                />
+
+            //comment
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment1"
+                android:gravity="left"
+                android:text="@string/comment1"
+                android:lines="5"
+                android:textSize="15dp"
+                android:paddingTop="5dp"
+                android:layout_weight="1"/>
+
+            //emoji and thanks are a horizontal layout
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:paddingTop="20dp"
+                >
+
+                //emoji
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emoji1"
+                    android:src="@drawable/emoji"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="left"
+                    android:paddingRight="2dp"
+                    />
+
+                //thanks
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Thank1"
+                    android:gravity="left"
+                    android:text="@string/Thank"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:paddingTop="3dp"/>
+            </LinearLayout>
+            //end of the horizontal layout (emoji and thanks)
+        </LinearLayout>
+        //end of the vertical layout (anonymous, comment, emoji and thanks)
+
+        //arrow
+          <ImageView
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:foregroundGravity="top"
+             android:id="@+id/arrow1"
+              android:src="@drawable/arrow"
+              android:adjustViewBounds="true"
+              android:layout_weight="1"
+              android:paddingTop="5dp"
+              />
+
+    </LinearLayout>
+    //end of the horizontal layout (one post)
+
+    //the second post
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:layout_weight="1">
+
+        //blue square
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:id="@+id/blue_square2"
+            android:src="@drawable/blue"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="top"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+
+            />
+
+        //vertical layout (anonymous info,comment, emoji and thanks)
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            >
+
+            //anonymous info
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/anonymous2"
+                android:gravity="left"
+                android:text="@string/anonymous"
+                android:textSize="15dp"
+                android:textStyle="normal|italic"
+                />
+
+            //comment
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment2"
+                android:gravity="left"
+                android:text="@string/comment2"
+                android:lines="2"
+                android:paddingTop="5dp"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+
+            //horizontal layout (emoji and thanks)
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:paddingTop="20dp"
+                >
+
+                //emoji
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emoji2"
+                    android:src="@drawable/emoji"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                //thanks
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Thank2"
+                    android:gravity="left"
+                    android:text="@string/Thank"
+                    android:paddingLeft="3dp"
+                    android:paddingTop="3dp"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            //end of horizontal layout (emoji and thanks)
+        </LinearLayout>
+        //end of vertical layout (anonymous, comment, emoji and thanks
+
+        //arrow
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:foregroundGravity="top"
+                android:id="@+id/arrow2"
+                android:src="@drawable/arrow"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+
+                />
+
+    </LinearLayout>
+    //end of horizontal layout (one post)
+
+    //the third post
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        //blue square
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:id="@+id/blue_square3"
+            android:src="@drawable/blue"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="top"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            />
+
+        //vertical layout (anonymous info, comment)
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp">
+
+            //anonymous info
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/anonymous3"
+                android:gravity="left"
+                android:text="@string/anonymous"
+                android:textSize="15dp"
+                android:textStyle="normal|italic"
+                />
+
+            //comment
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment3"
+                android:gravity="left"
+                android:text="@string/comment3"
+                android:lines="3"
+                android:paddingTop="5dp"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        //end of the vertical layout (anonymous, comment)
+
+        //arrow
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:foregroundGravity="top"
+                android:id="@+id/arrow3"
+                android:src="@drawable/arrow"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                />
+    </LinearLayout>
+    //end of horizontal layout (one post)
+
+    //start of a new horizontal layout (2 emojis, 2 texts)
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingLeft="70dp"
+            android:paddingBottom="7dp"
+        android:layout_weight="1"
+            >
+
+        //emoji1
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emoji3"
+                android:src="@drawable/emoji"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="left"
+                />
+
+        //thanks
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Thank3"
+                android:gravity="left"
+                android:text="@string/Thank"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp"
+                android:textSize="15dp"
+                android:textColor="@android:color/darker_gray"
+                android:paddingRight="155dp"/>
+
+
+        //emoji2
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:adjustViewBounds="true"
+                android:gravity="right"
+                android:id="@+id/emoji4"
+                android:src="@drawable/emoji"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:paddingRight="3dp"
+
+                />
+
+        //1
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/number"
+                android:text="1"
+                android:gravity="right"
+                android:textSize="15dp"
+                android:textColor="@android:color/darker_gray"
+                />
+
+    </LinearLayout>
+    //end of the fourth horizontal layout
+
+    //draw a grey line
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+
+        android:paddingBottom="10dp" />
+
+    //horizontal layout (bottom)
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp">
+
+        //camera icon
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/camera"
+            android:src="@drawable/camera"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="left|bottom"
+
+            />
+
+        //edittext
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:gravity="left|bottom"
+                android:id="@+id/add"
+                android:textSize="17dp"
+                android:textColor="@android:color/darker_gray"
+                android:text="Add a reply...                                                                                    "
+                android:layout_weight="1"/>
+
+    </LinearLayout>
+    //end of horizontal layout (camera and add and line)
+</LinearLayout>
+
+

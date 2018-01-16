@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HW3a</string>
+    <string name ="anonymous">First and last name, city  age of post</string>
+    <string name="comment1">Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit, sed do\neliusmod tempor incididunt ut\nlabore et dolore magna aliqua.\nUt enim ad minim veniam,</string>
+    <string name="Thank">Thank</string>
+    <string name="comment2">Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit, set do</string>
+    <string name="comment3">Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit, sed do\neliusmod tempor incididunt ut</string>
+</resources>
